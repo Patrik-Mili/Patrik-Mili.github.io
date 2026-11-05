@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patrik Militao | Cybersecurity Portfolio</title>
+<meta name="description" content="Junior SOC / Vulnerability Management Analyst. CompTIA CySA+, Security+. Splunk, Nessus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0f14; --surface:#121821; --surface-2:#18202b; --border:#243041;
+  --text:#e6edf3; --muted:#9aa7b4; --accent:#3fb950; --accent-ink:#06120a;
+  --radius:14px; --max:1040px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(11,15,20,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;letter-spacing:-.01em}
+.logo span{color:var(--accent)}
+.links{display:flex;gap:24px;font-size:14px;color:var(--muted)}
+.links a:hover{color:var(--text)}
+
+/* hero */
+.hero{padding:96px 0 72px}
+.eyebrow{font-size:13px;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(38px,6vw,60px);line-height:1.08;letter-spacing:-.03em;font-weight:700}
+.headline{margin-top:16px;font-size:clamp(17px,2.2vw,21px);color:var(--muted);max-width:720px}
+.intro{margin-top:24px;max-width:680px;color:#c5d0da}
+.cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--border);background:var(--surface);transition:.15s}
+.btn:hover{border-color:#3a4a60;background:var(--surface-2)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.disabled{opacity:.45;pointer-events:none}
+.btn svg{width:16px;height:16px}
+
+/* sections */
+section{padding:64px 0;border-top:1px solid var(--border)}
+h2{font-size:28px;letter-spacing:-.02em;margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:32px}
+
+/* projects */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column}
+.tag{font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.card h3{font-size:21px;letter-spacing:-.01em;margin-bottom:10px}
+.card p{color:#c5d0da;font-size:15px}
+.result{margin:20px 0;padding:14px 16px;border-radius:10px;background:var(--surface-2);border-left:3px solid var(--accent);font-size:14.5px}
+.result b{color:var(--text)}
+.result span{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{font-size:12.5px;padding:4px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
+.card .actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px}
+
+/* certs */
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.cert{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
+.cert b{display:block;font-size:15.5px}
+.cert span{font-size:13.5px;color:var(--muted)}
+.cert.pending span{color:#d29922}
+
+/* skills */
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills .chip{font-size:14px;padding:8px 14px;color:var(--text);background:var(--surface)}
+
+footer{border-top:1px solid var(--border);padding:40px 0 56px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+
+@media (max-width:600px){
+  .wrap{padding:0 16px}
+  .links a:not(.keep){display:none}
+  .hero{padding:64px 0 48px}
+  section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">Patrik Militao<span>.</span></a>
+    <div class="links">
+      <a href="#projects" class="keep">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="https://www.linkedin.com/in/patrik-militao" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow mono">Cybersecurity portfolio</div>
+    <h1>Patrik Militao</h1>
+    <p class="headline">Junior SOC / Vulnerability Management Analyst &nbsp;·&nbsp; CompTIA CySA+, Security+ &nbsp;·&nbsp; Splunk, Nessus</p>
+    <p class="intro">Career changer. I spent five years running my own personal training business in the UK, then completed a full-time cybersecurity programme with Newto Training (Nov 2025 – Oct 2026). My work so far is defensive, with offensive security as my goal.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn" href="https://www.linkedin.com/in/patrik-militao" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        LinkedIn</a>
+      <a class="btn" href="https://github.com/Patrik-Mili" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Hands-on lab work from the Newto Training programme.</p>
+    <div class="grid">
+
+      <article class="card">
+        <div class="tag mono">SIEM · Security operations</div>
+        <h3>Splunk Home SIEM Lab</h3>
+        <p>Installed Splunk Enterprise 10.6 on a Windows laptop and ingested Windows Security, System and Application event logs. Built custom dashboards, including a failed-logins panel (Event ID 4625), then simulated brute-force attempts against a test account to test sign-in throttling and the account lockout policy.</p>
+        <div class="result"><b>Key finding:</b> <span>the failed-login panel was also counting Application-log events that share ID 4625. Event IDs aren't unique across logs. Fixed by filtering to the Windows Security log only.</span></div>
+        <div class="chips"><span class="chip">Splunk Enterprise</span><span class="chip">Windows event logs</span><span class="chip">Dashboards</span><span class="chip">Account lockout policy</span></div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/Patrik-Mili/splunk-home-siem-lab" target="_blank" rel="noopener">View project</a>
+          <!-- TODO: upload report PDF to the repo, then replace href and remove "disabled" -->
+          <a class="btn disabled" href="#" aria-disabled="true">Download report (coming soon)</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="tag mono">Vulnerability management</div>
+        <h3>Nessus Vulnerability Remediation</h3>
+        <p>Scanned my own machine with Tenable Nessus Essentials. Six of the seven Medium findings came from three default Splunk TLS certificate issues across active management ports. Built a private certificate authority with OpenSSL, issued CA-signed certificates and replaced Splunk's default TLS certificates.</p>
+        <div class="result"><b>Result:</b> <span>rescanned and confirmed Medium findings dropped from 7 to 1.</span></div>
+        <div class="chips"><span class="chip">Tenable Nessus</span><span class="chip">OpenSSL</span><span class="chip">Private CA</span><span class="chip">TLS certificates</span></div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/Patrik-Mili/nessus-vulnerability-remediation" target="_blank" rel="noopener">View project</a>
+          <!-- TODO: upload report PDF to the repo, then replace href and remove "disabled" -->
+          <a class="btn disabled" href="#" aria-disabled="true">Download report (coming soon)</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <h2>Certifications</h2>
+    <p class="sub">Earned within nine months.</p>
+    <div class="certs">
+      <div class="cert"><b>CompTIA CySA+</b><span>Oct 2026</span></div>
+      <div class="cert"><b>CompTIA CSAP</b><span>Oct 2026</span></div>
+      <div class="cert"><b>CompTIA Security+</b><span>May 2026</span></div>
+      <div class="cert"><b>Microsoft AZ-900</b><span>Feb 2026</span></div>
+      <div class="cert pending"><b>Forescout Certified Associate</b><span>In progress</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">Tools and platforms used in my lab work.</p>
+    <div class="skills">
+      <span class="chip">Splunk Enterprise</span><span class="chip">Windows event log analysis</span><span class="chip">Tenable Nessus</span><span class="chip">OpenSSL &amp; certificate management</span><span class="chip">Wireshark</span><span class="chip">Microsoft Azure basics</span><span class="chip">Windows</span><span class="chip">Linux</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Patrik Militao</span>
+    <span><a href="https://www.linkedin.com/in/patrik-militao" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/Patrik-Mili" target="_blank" rel="noopener">GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
